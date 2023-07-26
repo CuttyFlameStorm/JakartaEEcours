@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" version="6.0">
+  <servlet>
+    <description></description>
+    <display-name>Mvc2MainServlet</display-name>
+    <servlet-name>Mvc2MainServlet</servlet-name>
+    <servlet-class>SERVLETS.Mvc2MainServlet</servlet-class>
+    <init-param>
+      <description>valeur minimum</description>
+      <param-name>min</param-name>
+      <param-value>1</param-value>
+    </init-param>
+    <init-param>
+      <description>valeur maximum</description>
+      <param-name>max</param-name>
+      <param-value>3</param-value>
+    </init-param>
+     
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Mvc2MainServlet</servlet-name>
+    <url-pattern>/chifoumi</url-pattern>
+  </servlet-mapping>
+
+	
+	<servlet>
+		<servlet-name>jsptentative</servlet-name>
+		<jsp-file>/WEB-INF/pages/tentative.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>jsptentative</servlet-name>
+		<url-pattern>/tentative</url-pattern>
+	</servlet-mapping>
+
+</web-app>
